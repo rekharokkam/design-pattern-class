@@ -1,0 +1,99 @@
+Class Main URL - https://www.safaribooksonline.com/live-training/courses/design-patterns-boot-camp/0636920074762/
+
+Design Patterns are general Solutions to Object Oriented Problems. We benefit from the design perspective of other developers.
+
+Design Principles - is the guidelines that help us avoid designing bad Object Oriented design.
+
+Design pattern are often communicated through class diagrams.
+
+
+Inheritance [IS A] - refer to "object_oriented_design_inheritance.gliffy" OR "object_oriented_design_inheritance.jpg"
+------------------
+
+allows to extend the base class through sub-classing
+
+A solid line with an unfilled (open) arrow head indicates inheritance - from child class to parent class. 
+Inheritance is indicated as "IS OF" relationship.
+
+An implementing class of an interface will have dotted line from the class to the interface with an unfilled [open] arrow. Dog must implement the Walk method to be of Walkable Type.
+
+A Dog "IS AN" animal and "IS A" Walkable.
+
+
+Composition/Aggregation [HAS A] - refer to "object_oriented_design_composition.gliffy" OR "object_oriented_design_composition.jpg" 
+--------------------------------
+
+Composition OR Aggregation relationship is called "Has A" relationship.
+Diamond shaped arrow Head indicates "Has A" relationship. If arrowhead is filled then composition if unfilled then aggregation. Arrowhead points to the target from Source class.
+Source is the class that contains the target Object. Ex - Duck is the source Object and Strategy is the target Object.
+Composition and Aggregation both imply there is a reference relationship from one object to another.
+If referenced Object "Owner" lives even after the referencing Object "Animal" goes away it is aggregation relationship.
+If referenced Object "Parts" also goes away along with the referencing object "Body" then it is composition relationship.
+
+
+Design Principal
+----------------
+
+Identify the aspects of your application that vary and separate them from what stays the same.
+
+Program to an interface, not an implementation.
+
+Overview
+--------
+
+Classification of Patterns - Pattern_Classification.xml
+
+Creational - related to Objects Instantiation. Provides a way to decouple a client from the way Objects they require are created.
+
+
+Behavioral - How classes and Objects interact and distribute responsibility.
+
+Structural - Lets you compose classes and Objects into larger structures.
+
+
+
+What aren't design patterns
+---------------------------
+1) Design Patterns are not code lobraries od modules
+2) Design Patterns are not coding idioms
+3) Design Patterns are not design principles.
+Design Principles are more like guidelines for smaller tasks. Design patterns are bigger than principals as they aspire to solve bigger problems.
+
+
+Strategy Pattern Approach to composing behaviors - design_pattern_duck_example_Efficient.gliffy
+------------------------------------------------
+After this implementation, it is so easy to switch the behavior classes - refer to MiniDuckSimulatorStrategy -> main().
+No duplicate Code, no changes to existing classes
+
+Definition - "Defines a family of Algorithms encapsulating each one, and makes them interchangeable. Strategy lets the algorithm vary independently from the clients using it."
+
+Designing should always be practical based on the practical use cases that exists at the moment and the scenarios we can think of.
+Ex - If there were only 2 types of ducks - Mallard and RedHead then we didn't need the interfaces - FlyBehavior and QuackBehavior.
+Strategy pattern is very abstract.
+
+Gang of four representation - Strategy_pattern_generic_overview.gliffy
+
+Category : Behavior
+
+
+Adapter - Adapter_pattern_pictorial_rep.png
+--------
+Converting one interface to another. 
+
+Definition - "Convert the interface of a class into another interface client's expect. Adapter lets classes work together that couldn't otherwise because of 
+incompatible interfaces."
+
+Gang of four representation - Adapter_pattern_generic_overview.gliffy
+
+Category - Structural
+
+Facade - 
+------
+
+Definition - "Provides a Unified Interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use."
+
+Gang of four representation - Facade_pattern_generic_overview.gliffy
+
+Category - Structural
+
+
