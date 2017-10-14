@@ -62,6 +62,10 @@ Design Principles are more like guidelines for smaller tasks. Design patterns ar
 
 Strategy Pattern Approach to composing behaviors - design_pattern_duck_example_Efficient.gliffy
 ------------------------------------------------
+OOOPrincipal - Favor composition over inheritance. Has-A is better than Is-A relationship.
+Program to interface not to implementation. 
+
+
 After this implementation, it is so easy to switch the behavior classes - refer to MiniDuckSimulatorStrategy -> main().
 No duplicate Code, no changes to existing classes
 
@@ -76,7 +80,7 @@ Gang of four representation - Strategy_pattern_generic_overview.gliffy
 Category : Behavior
 
 
-Adapter - Adapter_pattern_pictorial_rep.png
+Adapter - Adapter_pattern_pictorial_rep.jpg
 --------
 Converting one interface to another. 
 
@@ -95,5 +99,73 @@ Definition - "Provides a Unified Interface to a set of interfaces in a subsystem
 Gang of four representation - Facade_pattern_generic_overview.gliffy
 
 Category - Structural
+
+Design principles- OOBasics_OOPrinciples.xml
+-----------------
+
+A design principal is a general guideline that helps us avoid bad OOP designs.
+Typically design principals address some aspect of keeping your designs flexible, resilient and/or reusable.
+
+Basic OOP concepts - encapsulation, abstraction, inheritance, polymorphism
+
+"Encapsulate what varies" - Strategy pattern, identify what behaviors change and encapsulate them. Ex - FlyBehavior, QuackBehavior
+"Only talk to your friends" - about the visibility of behavior.
+
+SOLID Principles
+----------------
+
+S - Single Responsibility Principle. A class should have only 1 reason to change.
+O - Open/Closed Principal - Minimize changes to existing code
+L - Liskov substitution Principle - We should be able to use any subclass in place of superclass and the program should still work just fine.
+I - Interface Segregation Principle - Keep the classes small and focused. A class should not be forced to depend on methods it doesn't use. It's good idea to make 
+classes implement smaller interfaces with related methods than implementing bigger Interfaces having methods that a class doesn't need.
+D - Dependency Inversion Principle - We should depend on abstractions not on concrete classes.
+
+
+Decorator Pattern - Decorator_pattern_generic_overview.gliffy
+-----------------
+Problem statement - To better understand the problem refer to the design diagram - Without_decorator_pattern.gliffy. Here all the subclasses of "Bevarage" class have standard set of
+ingredients. Problem statement is when a customer orders Mocha on the DarkRoast. For just one customer class cannot be modified as we will break the OOPrinciple.
+Also if another customer orders DarkRoast with Mocha and Whip.
+
+Decorator comes into picture when there is an existing behavior and we need little more on the existing behavior, meaning there is already a base behavior we
+need to top it with additional behavior.
+
+"class should be closed for modification and open for extension".
+
+For how this problem is solved refer to "With_decorator_pattern.gliffy"
+
+OOPrincipal - "Classes should be closed for modification and open for extension"
+
+
+Definition - ""
+
+Gang of four representation - 
+
+Category - Structural
+
+Observer 
+--------
+OOPrincipal - "Strive for loosely coupled designs between the objects that interact"
+
+
+Definition - ""
+
+Gang of four representation - 
+
+Category - behavior
+
+
+OOPrincipal - Single Responsibility Principal - "A class should have one reason to change."
+
+
+
+
+
+
+
+
+
+
 
 
