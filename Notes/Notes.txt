@@ -138,7 +138,7 @@ For how this problem is solved refer to "With_decorator_pattern.gliffy"
 OOPrincipal - "Classes should be closed for modification and open for extension"
 
 
-Definition - ""
+Definition - "Attach Additional responsibilities to an Object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality."
 
 Gang of four representation - 
 
@@ -157,6 +157,11 @@ Category - behavior
 
 
 OOPrincipal - Single Responsibility Principal - "A class should have one reason to change."
+
+----------------------------------------------------------------------------------------------------------------
+
+Rework the decorator pattern and add addtional notes.
+Observer pattern - Strive for loose coupling between objects that interact
 
 
 
