@@ -160,7 +160,7 @@ OOPrincipal - Single Responsibility Principal - "A class should have one reason 
 
 ----------------------------------------------------------------------------------------------------------------
 
-Rework the decorator pattern and add addtional notes.
+Rework the decorator pattern and add additional notes.
 Observer pattern - Strive for loose coupling between objects that interact
 
 
