@@ -15,7 +15,8 @@ allows to extend the base class through sub-classing
 A solid line with an unfilled (open) arrow head indicates inheritance - from child class to parent class. 
 Inheritance is indicated as "IS OF" relationship.
 
-An implementing class of an interface will have dotted line from the class to the interface with an unfilled [open] arrow. Dog must implement the Walk method to be of Walkable Type.
+An implementing class of an interface will have dotted line from the class to the interface with an unfilled [open] arrow. 
+Dog must implement the Walk method to be of Walkable Type.
 
 A Dog "IS AN" animal and "IS A" Walkable.
 
@@ -24,7 +25,8 @@ Composition/Aggregation [HAS A] - refer to "object_oriented_design_composition.g
 --------------------------------
 
 Composition OR Aggregation relationship is called "Has A" relationship.
-Diamond shaped arrow Head indicates "Has A" relationship. If arrowhead is filled then composition if unfilled then aggregation. Arrowhead points to the target from Source class.
+Diamond shaped arrow Head indicates "Has A" relationship. If arrowhead is filled then composition if unfilled then aggregation. 
+Arrowhead points to the target from Source class.
 Source is the class that contains the target Object. Ex - Duck is the source Object and Strategy is the target Object.
 Composition and Aggregation both imply there is a reference relationship from one object to another.
 If referenced Object "Owner" lives even after the referencing Object "Animal" goes away it is aggregation relationship.
@@ -45,7 +47,6 @@ Classification of Patterns - Pattern_Classification.xml
 
 Creational - related to Objects Instantiation. Provides a way to decouple a client from the way Objects they require are created.
 
-
 Behavioral - How classes and Objects interact and distribute responsibility.
 
 Structural - Lets you compose classes and Objects into larger structures.
@@ -54,7 +55,7 @@ Structural - Lets you compose classes and Objects into larger structures.
 
 What aren't design patterns
 ---------------------------
-1) Design Patterns are not code lobraries od modules
+1) Design Patterns are not code libraries or modules
 2) Design Patterns are not coding idioms
 3) Design Patterns are not design principles.
 Design Principles are more like guidelines for smaller tasks. Design patterns are bigger than principals as they aspire to solve bigger problems.
@@ -69,7 +70,8 @@ Program to interface not to implementation.
 After this implementation, it is so easy to switch the behavior classes - refer to MiniDuckSimulatorStrategy -> main().
 No duplicate Code, no changes to existing classes
 
-Definition - "Defines a family of Algorithms encapsulating each one, and makes them interchangeable. Strategy lets the algorithm vary independently from the clients using it."
+Definition - "Defines a family of Algorithms encapsulating each one, and makes them interchangeable. 
+Strategy lets the algorithm vary independently from the clients using it."
 
 Designing should always be practical based on the practical use cases that exists at the moment and the scenarios we can think of.
 Ex - If there were only 2 types of ducks - Mallard and RedHead then we didn't need the interfaces - FlyBehavior and QuackBehavior.
@@ -124,8 +126,9 @@ D - Dependency Inversion Principle - We should depend on abstractions not on con
 
 Decorator Pattern - Decorator_pattern_generic_overview.gliffy
 -----------------
-Problem statement - To better understand the problem refer to the design diagram - Without_decorator_pattern.gliffy. Here all the subclasses of "Bevarage" class have standard set of
-ingredients. Problem statement is when a customer orders Mocha on the DarkRoast. For just one customer class cannot be modified as we will break the OOPrinciple.
+Problem statement - To better understand the problem refer to the design diagram - Without_decorator_pattern.gliffy. 
+Here all the subclasses of "Bevarage" class have standard set of ingredients. 
+Problem statement is when a customer orders Mocha on the DarkRoast. For just one customer class cannot be modified as we will break the OOPrinciple.
 Also if another customer orders DarkRoast with Mocha and Whip.
 
 Decorator comes into picture when there is an existing behavior and we need little more on the existing behavior, meaning there is already a base behavior we
@@ -144,6 +147,11 @@ Gang of four representation -
 
 Category - Structural
 
+Decorator and base class both implement/extend the same interface/abstract.
+java.io is the best example of decorator class.
+
+
+
 Observer 
 --------
 OOPrincipal - "Strive for loosely coupled designs between the objects that interact"
@@ -160,7 +168,6 @@ OOPrincipal - Single Responsibility Principal - "A class should have one reason 
 
 ----------------------------------------------------------------------------------------------------------------
 
-Rework the decorator pattern and add additional notes.
 Observer pattern - Strive for loose coupling between objects that interact
 
 

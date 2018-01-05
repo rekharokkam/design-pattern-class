@@ -1,23 +1,30 @@
 package com.learning.design.decorator.bevarage;
 
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.stream.Collectors;
 
-import com.learning.design.decorator.ingredient.Ingredient;
-import com.learning.design.decorator.ingredient.Mocha;
+import com.learning.design.decorator.condiment.DecoratorCondiment;
+import com.learning.design.decorator.condiment.Mocha;
 
-public class MochaDarkRoast extends Bevarage
+public class MochaDarkRoast implements Bevarage
 {
-	private List<Ingredient> mochaDarkRoastIngredients = new ArrayList<>();
+	private static final String DESC = "MochaDarkRoast";
+	
+	private DecoratorCondiment mocha = new Mocha ();
 	
 	private DarkRoast darkRoast = new DarkRoast();
 	
 	public MochaDarkRoast (){
-		
-		mochaDarkRoastIngredients.add(new Mocha());
-		
-		mochaDarkRoastIngredients.addAll(darkRoast.getIngredients());
-		
-		super.setIngredients(mochaDarkRoastIngredients);
+		mocha.addBevarage(darkRoast);
+	}
+	
+	@Override
+	public double getCost (){
+		return mocha.getCost();
+	}
+	
+	@Override
+	public String getDescription (){
+//		return DESC + " : " + mocha.getCondiments().stream().map(Bevarage::getDescription).collect(Collectors.joining(", "));
+		return DESC + " : " + mocha.getDescription();
 	}
 }
