@@ -157,18 +157,22 @@ Observer
 OOPrincipal - "Strive for loosely coupled designs between the objects that interact"
 
 
-Definition - ""
+Definition - "Defines a one-to-many dependency between objects so that when one Object changes state, all its dependents are notified and updated automatically."
+One - Subject - that manages the data
+many - Observers - that need to be notified when data changes.
 
 Gang of four representation - 
 
 Category - behavior
 
 
-OOPrincipal - Single Responsibility Principal - "A class should have one reason to change."
+OOPrincipal - "Single Responsibility Principal - A class should have one reason to change."
+
+Works on Publish-Subscribe model.
 
 ----------------------------------------------------------------------------------------------------------------
 
-Observer pattern - Strive for loose coupling between objects that interact
+
 
 
 
